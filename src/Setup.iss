@@ -118,3 +118,5 @@ Name: "{autodesktop}\LANDrop"; Filename: "{app}\LANDrop.exe"; Tasks: desktopicon
 [Run]
 Filename: "{app}\LANDrop.exe"; Description: "{cm:LaunchProgram,LANDrop}"; Flags: nowait postinstall skipifsilent
 
+[Registry]
+Root: HKLM; Subkey: "SOFTWARE\Microsoft\Windows\CurrentVersion\Run"; ValueType: string; ValueName: "LANDrop"; ValueData: "{app}\LANDrop.exe"
