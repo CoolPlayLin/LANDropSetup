@@ -1,0 +1,11 @@
+name: Setup Build
+on: push
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: ./InnoCompiler/ISCC ./src/Setup.iss
